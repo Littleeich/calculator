@@ -19,9 +19,9 @@
 }
 .radio-legend {
   font-size: 24px;
+  font-weight: bold;
   display: block;
-  padding: 0 0 14px 0;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 input[type="reset"] {
   background-color: #e6e6e6;
@@ -60,6 +60,7 @@ span[class*='-error'] {
 }
 .result-text {
   font: 22px/26px Arial;
-  padding: 10px;
+  font-weight: bold;
+  padding: 15px;
   background-color: aqua;
 }
