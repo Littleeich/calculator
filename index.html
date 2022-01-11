@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="form-wrapper">
+			<form class="myform" action="" method="">
+				<h2 class="title">SICE Score</h2>
+				<span class="radio-legend">Strategy</span>
+				<div class="radio-div">
+					<input type="radio" id="veryLowStrategy" name="strategy-status" value="0.5">
+					<label for="veryLowStrategy">The feature will help to satisfy existing customers</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="lowStrategy" name="strategy-status" value="1">
+					<label for="lowStrategy">The feature is aligned with the product vision set for this Q</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midStrategy" name="strategy-status" value="2">
+					<label for="midStrategy">The feature will allow acquiring a new contract or upselling</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="highStrategy" name="strategy-status" value="3">
+					<label for="highStrategy">The feature will enable the new revenue stream or win over the competitor (market differentiator)</label>
+				</div>
+				<span class="strategy-error invisible">Please, choose at least one option</span>
+
+				<span class="radio-legend">Impact</span>
+				<div class="radio-div">
+					<input type="radio" id="veryLowImpact" name="impact-status" value="0.5">
+					<label for="veryLowImpact">The customer whose contract is about to expire</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="lowImpact" name="impact-status" value="1">
+					<label for="lowImpact">One active customer</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midImpactCustomers" name="impact-status" value="2">
+					<label for="midImpactCustomers">Several customers</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midImpactPartners" name="impact-status" value="2">
+					<label for="midImpactPartners">Strategic partners</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="highImpact" name="impact-status" value="3">
+					<label for="highImpact">All customers</label>
+				</div>
+				<span class="impact-error invisible">Please, choose at least one option</span>
+
+				<span class="radio-legend">Confidence</span>
+				<div class="radio-div">
+					<input type="radio" id="veryLowConfidence" name="confidence-status" value="0.5">
+					<label for="veryLowConfidence">We <strong>think</strong> that it may ease the user’s life; no evidence available yet</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="lowConfidenceAgo" name="confidence-status" value="1">
+					<label for="lowConfidenceAgo">The feature was requested once, a while ago</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="lowConfidencePOC" name="confidence-status" value="1">
+					<label for="lowConfidencePOC">We are testing POC</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midConfidenceTesters" name="confidence-status" value="2">
+					<label for="midConfidenceTesters">Several customers are asking about feature and are ready to become early testers</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midConfidenceStrategic" name="confidence-status" value="2">
+					<label for="midConfidenceStrategic">The strategic partner’s request</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="highConfidencePOC" name="confidence-status" value="3">
+					<label for="highConfidencePOC">POC has been tested and approved</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="highConfidenceMockup" name="confidence-status" value="3">
+					<label for="highConfidenceMockup">We showed an early mockup to customers and they agree that this feature is clear, necessary and will be used</label>
+				</div>
+				<span class="confidence-error invisible">Please, choose at least one option</span>
+
+				<span class="radio-legend">Efforts</span>
+				<div class="radio-div">
+					<input type="radio" id="lowEfforts" name="efforts-status" value="1">
+					<label for="lowEfforts">May be developed during 1 sprint or less</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="midEfforts" name="efforts-status" value="2">
+					<label for="midEfforts">Requires POC and further investigation</label>
+				</div>
+				<div class="radio-div">
+					<input type="radio" id="highEfforts" name="efforts-status" value="3">
+					<label for="highEfforts">Requires other functional parts to be built as precursors</label>
+				</div>
+				<span class="efforts-error invisible">Please, choose at least one option</span>
+
+				<div id="buttons">
+					<input type="reset" value="Clear form" class="button">
+					<input type="submit" value="Apply" class="button">
+				</div>
+			</form>
+		</div>
+
+		<div class="results"></div>
+		<script type="module" src="healthCalc.js"></script>
+	</body>
+</html>

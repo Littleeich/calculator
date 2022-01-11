@@ -1,0 +1,65 @@
+.myform {
+  color: #000;
+  font-family: Arial;
+  font-size: 20px;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;  
+}
+.title {
+  font-size: 32px;
+  font-weight: Normal;
+  margin-top: 48px;
+  padding: 0 2px
+}
+.label {
+  display: block;
+  padding: 0 4px;
+}
+.radio-legend {
+  font-size: 24px;
+  display: block;
+  padding: 0 0 14px 0;
+  margin-top: 20px;
+}
+input[type="reset"] {
+  background-color: #e6e6e6;
+  color: #808080
+}
+input[type="submit"] {
+  background-color: #000;
+  color: #ffffff
+}
+.button {
+  width: 360px;
+  height: 75px;
+  border-radius: 8px;
+  border: 0 solid #808080;
+  font-size: 24px;
+  margin: 0px 76px 20px 0
+}
+.radio-div {
+  margin: 18px 0 0 0;
+}
+#buttons {
+  margin: 50px 0 0 0;
+}
+span[class*='-error'] {
+  color: rgb(255, 0, 0);
+  font-family: Arial;
+  font-size: 15px;
+}
+.invisible {
+  display: none;
+}
+.results {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.result-text {
+  font: 22px/26px Arial;
+  padding: 10px;
+  background-color: aqua;
+}
